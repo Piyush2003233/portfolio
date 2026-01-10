@@ -214,6 +214,7 @@ body{
   justify-content: space-between;
   padding: 0 8%;
   background: linear-gradient(120deg, #020617, #0f172a);
+  height: 100vh;
 }
 
 .hero-text{
@@ -284,6 +285,10 @@ body{
   .hero{
     flex-direction: column;
     text-align: center;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
   }
 
   .hero-text{
@@ -295,6 +300,20 @@ body{
     width: 250px;
   }
 }
+@media (max-width: 768px){
+  .hero-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn,
+  .hero-buttons .btn-outline{
+    margin-right: 0;
+  }
+}
+
 
 /* About */
 .about{
@@ -612,4 +631,18 @@ ul li {
 .contact-box span {
   margin-right:auto;
   color: #38bdf8;
+}
+@media (max-width: 600px) {
+
+  .contact-box{
+    align-content: center;
+    padding-left: 20px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
 }
